@@ -1,0 +1,102 @@
+@font-face {
+    font-family: syno;
+    src: url('../media/fonts/SYNOMONO-III.otf');
+}
+@font-face {
+    font-family: mou;
+    src: url('../media/fonts/Mourier-Regular.otf');
+}
+@font-face {
+    font-family: meyrin;
+    src: url('../media/fonts/Meyrin.woff');
+}
+
+body {
+    --dark:  rgb(0, 0, 0);
+    --light: rgb(255, 0, 0);
+    --gray1:  rgb(29, 29, 29);
+    --hover: rgb(255, 255, 255);
+    --links: rgb(133, 133, 133);
+    --color: rgb(255, 255, 255);
+}
+
+* {
+    cursor: crosshair;
+    scroll-behavior: smooth;
+    transition: 600ms;
+}
+
+body {
+    background-color: var(--gray1);
+    background: linear-gradient(90deg, var(--gray1) 0%, var(--light) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--light);
+    user-select: none;
+    font-family: meyrin;
+    overflow: hidden;
+}
+body, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--links);
+}
+
+.drop-shadow-dark {
+    filter: drop-shadow(0px 0px 3px var(--dark));
+}
+
+.syno {
+    font-family: syno;
+}
+
+/* SIDE BAR */
+.marquee {
+    position: fixed;
+    /* z-index: 10; */
+    top: 0;
+    left: 0;
+    font-size: 6px;
+    line-height: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    height: 100vh;
+    font-family: syno, mou, meyrin, Arial, Helvetica, sans-serif;
+}
+
+.hover-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    width: 100%;
+    text-align: center;
+}
+
+.hover-image img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
+}
+
+#enter {
+    position: fixed;
+    text-align: center;
+    /* mix-blend-mode: luminosity; */
+    width: 100%;
+    /* top: 11px; */
+    bottom: 170px;
+    font-size: 27px;
+    z-index: 1500;
+    color: rgb(30, 30, 30);
+}
+
+#enter:hover {
+    letter-spacing: 0.2em;
+}
