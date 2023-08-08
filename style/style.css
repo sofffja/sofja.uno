@@ -10,7 +10,7 @@
 }
 
 body {
-    --dark:  rgb(58, 58, 58);
+    --dark:  rgb(21, 21, 21);
     /* --light: rgb(153, 153, 153); */
     /* --gray1:  rgb(100, 100, 100); */
     --light: rgb(174, 174, 174);
@@ -102,4 +102,15 @@ a:hover {
     margin-left: 4em;
     margin-right: 4em;
     color: black;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.selected a {
+    color: var(--dark);
+}
+.selected a:hover {
+    color: var(--links)
 }
