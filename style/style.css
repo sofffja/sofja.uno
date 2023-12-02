@@ -112,9 +112,12 @@ a:hover {
 }
 
 .texto {
-    margin-top: 6em;
-    margin-left: 4em;
-    margin-right: 4em;
+    /* width: 30%; */
+    padding: 0.5em;
+    /* transform: translateX(-50%);
+    margin-left: 50%; */
+    margin-left: 0em;
+    margin-top: 4em;
     color: black;
 }
 
