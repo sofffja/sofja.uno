@@ -81,24 +81,12 @@ nav {
     margin-top: 4rem;
 }
 
-strong {
-    font-size: 5rem;
-    font-weight: normal;
-    text-shadow: 0 0 6px var(--text), 0 0 2px var(--text);
-    filter: url('data:image/svg+xml,\
-    <svg xmlns="http://www.w3.org/2000/svg">\
-    <filter id="waves" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">\
-    <feTurbulence type="turbulence" baseFrequency="5 5" numOctaves="4" seed="2" stitchTiles="noStitch" result="turbulence" />\
-    <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="10" xChannelSelector="G" yChannelSelector="A" result="displacementMap" />\
-    </filter>\
-    </svg>#waves');
-}
-
 .rotate {
     transform: rotate(-1deg);
 }
 
 .contact {
+    width: 30vw;
     display: flex;
     flex-direction: column;
     transform: rotate(1deg);
@@ -110,6 +98,20 @@ strong {
 
 .last {
     margin-top: 1rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0.5rem;
+    font-size: 3rem;
+    filter: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+    <filter id="waves" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">\
+    <feTurbulence type="turbulence" baseFrequency="0.1 0.1" numOctaves="4" seed="1" stitchTiles="noStitch" result="turbulence" />\
+    <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="3" xChannelSelector="G" yChannelSelector="A" result="displacementMap" />\
+    </filter>\
+    </svg>#waves');
 }
 
 @media (max-width: 800px) {
@@ -124,4 +126,18 @@ strong {
     strong {
         font-size: 4rem;
     }
+}
+
+strong {
+    font-size: 5rem;
+    font-weight: normal;
+    text-shadow: 0 0 6px var(--text), 0 0 2px var(--text);
+    
+    filter: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+    <filter id="waves" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">\
+    <feTurbulence type="turbulence" baseFrequency="5 5" numOctaves="4" seed="2" stitchTiles="noStitch" result="turbulence" />\
+    <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="10" xChannelSelector="G" yChannelSelector="A" result="displacementMap" />\
+    </filter>\
+    </svg>#waves');
 }
