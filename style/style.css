@@ -84,6 +84,7 @@ nav {
 strong {
     font-size: 5rem;
     font-weight: normal;
+    text-shadow: 0 0 6px var(--text), 0 0 2px var(--text);
 }
 
 .rotate {
