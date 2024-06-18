@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: junicond;
+  src: url('../media/fonts/Junicode-CondLight.otf');
+}
+
+:root {
+  font-family: junicond, Helvetica, sans-serif;
+  font-size: 1.25rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  cursor: crosshair;
+  scroll-behavior: smooth;
+  --bg: #b7b7b7;
+  --text: #ffffff;
+  --primary: #e2ff25;
+  --secondary: #151515;
+  --accent: rgb(199, 199, 240);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--text);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+} */
+
+body {
+  background-color: var(--bg);
+  background: linear-gradient(30deg, var(--bg) 0%, #ddd 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--text);
+}
