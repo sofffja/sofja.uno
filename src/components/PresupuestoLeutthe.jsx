@@ -52,9 +52,103 @@ const categorias = [
   },
 ];
 
+const referencias = [
+  {
+    titulo: 'Pull and Bear - Logo 3D',
+    link: 'https://www.instagram.com/reel/C5DUqPmNHvM/',
+    figura: 'Nivel 1 - Logo a partir de diseño',
+    material: 'Nivel 2 - Cromado con reflejos',
+    animacion: 'Nivel 1 - Objeto girando con cámara fija',
+    detalle:
+      'Hasta 4 segundos. 1 logo animado con movimiento simple. No incluye montaje sobre video.',
+    precio: '$200.000',
+    aclaracion: '',
+  },
+  {
+    titulo: 'Bershka logo - Texto dibujándose',
+    link: 'https://www.instagram.com/reel/ChrLlQYIUlA/',
+    figura: 'Nivel 1 - Figura a partir de diseño',
+    material: 'Nivel 2 - Combinación de colores, textura, mate',
+    animacion: 'Nivel 1 - Curvas dibujándose, cámara fija.',
+    detalle: 'Hasta 8 segundos. 1 objeto con 1 material',
+    precio: '$250.000',
+    aclaracion: '',
+  },
+  {
+    titulo: 'Objetos cayendo',
+    link: 'https://www.instagram.com/reel/C6L_hk9C7rH/',
+    figura: 'Nivel 2 - Figuras simples pero en cantidad',
+    material: 'Nivel 1 - Color plano mate',
+    animacion: 'Nivel 2 - Simulación de física simple, cámara fija',
+    detalle: 'Hasta 8 segundos, hasta 6 figuras, cámara fija.',
+    precio: '$400.000',
+    aclaracion: 'Extra por cada figura nueva: $30.000',
+  },
+  {
+    titulo: 'Bershka logo - Materiales animados',
+    link: 'https://www.instagram.com/reel/C5kz_9QIWu_/',
+    figura: 'Nivel 1 - Logo a partir de diseño dado',
+    material: 'Nivel 3 - Material complejo con detalle y animaciones',
+    animacion:
+      'Nivel 2 - Movimiento de cámara + animación de texto simple + materiales animados',
+    detalle:
+      'Hasta 10 segundos. 1 texto + hasta 4 materiales diferentes con animación de hasta 2 seg cada uno',
+    precio: '$450.000',
+    aclaracion: '',
+  },
+  {
+    titulo: 'Lana nudo',
+    link: 'https://www.instagram.com/reel/C8Cbe25i718/',
+    figura: 'Nivel 1 - Soga en forma de nudo',
+    material: 'Nivel 3 - Tela realista, detalle complejo',
+    animacion:
+      'Nivel 3 - Simulación de física de soga anudándose, interacción entre partes',
+    detalle: 'Hasta 8 segundos. Una figura simulando nudo',
+    precio: '$450.000',
+    aclaracion: 'De los ejemplos de tejido, este es el más sencillo',
+  },
+  {
+    titulo: 'Camila and Marc - Logo en espacio',
+    link: 'https://www.instagram.com/reel/CgJSEYAjo-X/',
+    figura: 'Nivel 2 - Logo a partir de diseño + modelado de espacio',
+    material: 'Nivel 2 - Cromado realista con reflejos',
+    animacion:
+      'Nivel 3 - Simulación de fisica simple + movimiento de cámara + animación de luces',
+    detalle: 'Hasta 12 segundos. 1 logo, 1 espacio, 1 cámara animada',
+    precio: '$500.000',
+    aclaracion:
+      'Camila and Marc 3 - Similar pero con física más compleja: +$60.000',
+  },
+  {
+    titulo: 'Giftcard',
+    link: 'https://www.instagram.com/reel/CrySYwnIXmS/',
+    figura: 'Nivel 2 - Formas simples pero en cantidad',
+    material:
+      'Nivel 2 - Colores planos, con brillo y mesa metálica con reflejos',
+    animacion:
+      'Nivel 3 - Varios objetos en interación con animaciones distintas + simulación de física simple',
+    detalle: 'Hasta 8 segundos. Modelado de 1 figura + cajita + gitcard',
+    precio: '$550.000',
+    aclaracion: '',
+  },
+  // {
+  //   titulo: 'Bershka producto - Reveal',
+  //   link: 'https://www.instagram.com/reel/C4gAYl-onV2/',
+  //   figura: 'Nivel 3 - Producto realista',
+  //   material:
+  //     'Nivel 3 - 1 material realista de producto + 1 material realista de efecto',
+  //   animacion: 'Nivel 3 - Física + montaje de varias cámaras',
+  //   detalle:
+  //     'Hasta 10 segundos. 1 producto con efecto de revelado con física simulando realismo. Precio a confirmar según complejidad del producto.',
+  //   precio: '$700.000',
+  //   aclaración:
+  //     'Bershka producto 2 (zapato de cristal) es similar pero más sencillo',
+  // },
+];
+
 export default function PresupuestoLeutthe() {
   return (
-    <div className="py-16 px-8 flex flex-col gap-16 font-sans text-sm max-w-4xl mx-auto">
+    <div className="py-16 px-8 flex flex-col gap-16 font-[Helvetica] text-sm max-w-4xl mx-auto">
       <h1 className="text-3xl uppercase font-black">
         Presupuesto Le Utthe Junio 2024
       </h1>
@@ -93,27 +187,26 @@ export default function PresupuestoLeutthe() {
               - Una categoria (figura, material o animación) en nivel 2, las
               demás en nivel 1 de complejidad
             </li>
+            <li className="pl-2">- Hasta 2 correcciones</li>
           </ul>
         </div>
         <div className="flex flex-col gap-1">
-          <h3 className="italic text-zinc-600">
-            Precios por paquete de animaciones simples
-          </h3>
+          <h3 className="italic text-zinc-600">Descuentos por paquete</h3>
           <ul>
-            <li>3 x $700.000</li>
-            <li>4 x $900.000</li>
+            <li>2: 4% OFF</li>
+            <li>3: 6% OFF</li>
+            <li>4: 10% OFF</li>
           </ul>
         </div>
         <div className="flex flex-col gap-1">
           <h3 className="italic text-zinc-600">Incluido en paquete</h3>
           <ul>
-            <li className="pl-2">- 1 reunión al comienzo</li>
+            <li className="pl-2">- 2 reuniones</li>
             <li className="pl-2">- Entrega de boceto</li>
-            <li className="pl-2">- Hasta 2 correcciones</li>
             <li className="pl-2">
               - Disponibilidad para consultas de lunes a viernes de 9 a 17hs
             </li>
-            <li className="pl-2">- Precio fijo por 3 meses</li>
+            <li className="pl-2">- Precio fijo hasta Agosto inclusive</li>
           </ul>
         </div>
       </div>
@@ -121,112 +214,37 @@ export default function PresupuestoLeutthe() {
       <hr />
 
       <div className="flex flex-col gap-4">
-        <h2 className="uppercase font-bold">Ejemplos</h2>
+        <h2 className="uppercase font-bold">Ejemplos / Referencias</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 text-xs">
-          <div className="flex flex-col gap-2">
-            <img
-              className="w-full h-[300px] object-center object-cover border  border-zinc-400 rounded-sm"
-              src="/guide-3d/1.png"
-              alt=""
-            />
+          {referencias.map((referencia, index) => (
+            <div key={index} className="flex flex-col gap-4 ">
+              <div className="flex flex-col gap-1">
+                <h2 className="font-bold">{referencia.titulo}</h2>
+                <a
+                  href={referencia.link}
+                  className="italic underline text-[0.7rem] text-zinc-400"
+                >
+                  &#8594; link referencia
+                </a>
+                <ul className="flex flex-col gap-1">
+                  <li className="pl-2">Figura: {referencia.figura}</li>
+                  <li className="pl-2">Material: {referencia.material}</li>
+                  <li className="pl-2">Animacion: {referencia.animacion}</li>
+                </ul>
+              </div>
 
-            <a
-              href="https://www.instagram.com/reel/C5kz_9QIWu_/"
-              className="italic underline text-zinc-400"
-            >
-              &#8594; referencia
-            </a>
+              <div className="flex flex-col gap-1">
+                <h3 className="uppercase">Precio</h3>
 
-            <h2 className="font-bold">Logo con materiales animados</h2>
-
-            <ul className="flex flex-col gap-1">
-              <li className="pl-2">
-                Figura: Nivel 1 - Logo a partir de diseño
-              </li>
-              <li className="pl-2">
-                Animacion: Nivel 1 - Figura y cámara fijas
-              </li>
-              <li className="pl-2">
-                Material: Nivel 3 - Material animado con combinación de colores
-                y textura compleja
-              </li>
-            </ul>
-
-            <h3 className="italic underline">Precio</h3>
-            <ul className="flex flex-col gap-1">
-              <li>
-                4 animaciones de hasta 2 segundos, materiales diferentes:
-                $450.000
-              </li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <img
-              className="w-full h-[300px] object-center object-cover border  border-zinc-400 rounded-sm"
-              src="/guide-3d/2.png"
-              alt=""
-            />
-
-            <a
-              href="https://www.instagram.com/reel/ChrLlQYIUlA/"
-              className="italic underline text-zinc-400"
-            >
-              &#8594; referencia
-            </a>
-
-            <h2 className="font-bold">Texto que se va escribiendo</h2>
-
-            <ul className="flex flex-col gap-1">
-              <li className="pl-2">Figura: Nivel 1 - Texto cursiva</li>
-              <li className="pl-2">
-                Animacion: Nivel 1 - Un solo objeto. Curvas dibujándose con
-                cámara fija
-              </li>
-              <li className="pl-2">
-                Material: Nivel 2 - Material opaco con colores y textura
-              </li>
-            </ul>
-
-            <h3 className="italic underline">Precio</h3>
-            <ul className="flex flex-col gap-1">
-              <li>1 animacion de hasta 8 segundos: $250.000</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <img
-              className="w-full h-[300px] object-center object-cover border  border-zinc-400 rounded-sm"
-              src="/guide-3d/3.png"
-              alt=""
-            />
-
-            <a
-              href="https://www.instagram.com/p/C7mRaVCtPwI/?hl=en"
-              className="italic underline text-zinc-400"
-            >
-              &#8594; referencia
-            </a>
-
-            <h2 className="font-bold">Nudo</h2>
-
-            <ul className="flex flex-col gap-1">
-              <li className="pl-2">Figura: Nivel 1 - Soga en forma de nudo</li>
-              <li className="pl-2">
-                Animacion: Nivel 3 - Simulación de física de soga anudándose,
-                interacción entre partes
-              </li>
-              <li className="pl-2">
-                Material: Nivel 3 - Tela realista, detalle complejo
-              </li>
-            </ul>
-
-            <h3 className="italic underline">Precio</h3>
-            <ul className="flex flex-col gap-1">
-              <li>1 animacion de hasta 8 segundos: $450.000</li>
-            </ul>
-          </div>
+                <div className="flex flex-col gap-1">
+                  <p>{referencia.detalle}</p>
+                  <p className="">• {referencia.precio} •</p>
+                </div>
+                {referencia.aclaracion && <p>{referencia.aclaracion}</p>}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
