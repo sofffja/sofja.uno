@@ -3,7 +3,7 @@ export default function About() {
 
   return (
     <div className="flex md:flex-row flex-col md:gap-0 gap-8 justify-between lg:w-3/4 xl:w-2/3 py-16">
-      <p>ditial artist && web developer && electronic musician</p>
+      <p>digital artist && web developer && electronic musician</p>
 
       <div className="flex gap-4">
         <p>contact: </p>
