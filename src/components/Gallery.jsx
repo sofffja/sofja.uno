@@ -1,3 +1,5 @@
+import Obra from './Obra';
+
 export default function Gallery() {
   const obras = [
     { title: 'mas que anibios', img: 'n006.jpg', text: '' },
@@ -55,20 +57,9 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="flex flex-col gap-16 text-center pb-16">
-        {obras.map((obra) => (
-          <div
-            key={obra.img}
-            className="items-center justify-center w-full min-h-screen flex flex-col gap-2"
-          >
-            <img
-              src={`media/${obra.img}`}
-              alt=""
-              className="rounded-md shadow-[0_0_18px_0_rgba(0,0,0,0.3)] max-h-[80vh] h-auto max-w-2/3 lg:max-w-2/5"
-            />
-            <p className="">{obra.title}</p>
-            <p className="whitespace-pre-line text-sm">{obra.text}</p>
-          </div>
+      <div className="flex flex-col text-center pb-16">
+        {obras.map((obra, index) => (
+          <Obra key={obra.title + index} obra={obra} />
         ))}
         <div>✼</div>
       </div>
