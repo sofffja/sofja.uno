@@ -2,7 +2,7 @@ export default function About() {
   const baseStyle = 'hover:text-primary transition-colors';
 
   return (
-    <div className="flex md:flex-row flex-col md:gap-0 gap-8 justify-between lg:w-3/4 xl:w-2/3 py-16">
+    <div className="mt-6 md:mt-8 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.5)] flex md:flex-row flex-col justify-between lg:w-3/4 xl:w-2/3">
       <p>digital artist && web developer && electronic musician</p>
 
       <div className="flex gap-4">
