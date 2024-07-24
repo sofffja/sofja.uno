@@ -17,16 +17,15 @@ export default function About() {
           <a className={baseStyle} href="https://twitter.com/_sofffja">
             twitter
           </a>
+          <a className={baseStyle} href="https://soundcloud.com/sofffja">
+            soundcloud
+          </a>
         </div>
       </div>
 
       <div>
         <a className={baseStyle} href="https://www.aguja.re/">
-          aguja.re
-        </a>{' '}
-        |{' '}
-        <a className={baseStyle} href="https://www.unun.link">
-          unun.link
+          +++ aguja.re
         </a>
       </div>
     </div>
