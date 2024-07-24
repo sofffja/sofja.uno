@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 export default function Obra({ obra }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   if (!obra) return null;
 
   return (
