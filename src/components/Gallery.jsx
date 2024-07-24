@@ -1,4 +1,5 @@
 import Obra from './Obra';
+import { motion } from 'framer-motion';
 
 export default function Gallery() {
   const obras = [
@@ -57,12 +58,17 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="flex flex-col text-center pb-16">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="flex flex-col text-center pb-16"
+      >
         {obras.map((obra, index) => (
           <Obra key={obra.title + index} obra={obra} />
         ))}
         <div>✼</div>
-      </div>
+      </motion.div>
     </>
   );
 }
