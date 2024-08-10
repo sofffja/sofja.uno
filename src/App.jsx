@@ -4,6 +4,7 @@ import Menu from './components/Menu';
 import Gallery from './components/Gallery';
 import About from './components/About';
 import PresupuestoLeutthe from './components/PresupuestoLeutthe';
+import Prints from './components/Prints';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               path="/presupuesto-leutthe"
               element={<PresupuestoLeutthe />}
             />
+            <Route path="/prints" element={<Prints />} />
           </Routes>
         </AnimatePresence>
       </div>
