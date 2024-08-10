@@ -30,7 +30,7 @@ export default function Prints() {
         </p>
         {/* <p>Numerados del 1 al 20</p> */}
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] mx-auto max-w-8xl gap-16 p-16 text-center">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] mx-auto max-w-8xl gap-16 px-4 md:px-16 py-16 text-center">
         {obras.map((obra, index) => (
           <div
             key={obra.title + index}
