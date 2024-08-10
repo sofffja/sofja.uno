@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Gallery() {
   const obras = [
+    { title: 'as_de_flores.jpg', img: 'flor.webp', text: '' },
     { title: 'mas que anibios', img: 'n006.webp', text: '' },
     {
       title: 'cover artwork for Stazma The Junglechrist - Poursuite EP',
