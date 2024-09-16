@@ -63,7 +63,7 @@ export default function Gallery() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="flex flex-col text-center pb-16"
+        className="flex flex-col text-center pb-16 pt-16 gap-8 sm:gap-0 sm:pt-0"
       >
         {obras.map((obra, index) => (
           <Obra key={obra.title + index} obra={obra} />
