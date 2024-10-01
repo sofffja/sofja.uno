@@ -68,7 +68,7 @@ export default function Gallery() {
         {obras.map((obra, index) => (
           <Obra key={obra.title + index} obra={obra} />
         ))}
-        <div>✼</div>
+        <div className="drop-shadow-[1px_1px_0px_rgba(0,0,0,0.5)]">✼</div>
       </motion.div>
     </>
   );

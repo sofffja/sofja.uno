@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
 
 export default function Menu() {
-  const baseStyle = 'hover:text-primary transition-colors';
+  const baseStyle =
+    'transition-colors hover:invert pt-1 sm:hover:text-[#000] mix-blend-difference';
 
   return (
     <>
-      <header className="fixed top-0 left-0 flex justify-between drop-shadow-[1px_1px_0px_rgba(0,0,0,0.5)] uppercase px-1 leading-none w-full mix-blend-difference ">
-        <h1 className="">Sofja</h1>
-        <nav className="flex gap-2 md:gap-4 pt-1">
+      <header className="fixed top-0 left-0 pt-2 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.5)] uppercase leading-none w-full mix-blend-difference z-10">
+        <nav className="flex justify-end gap-2 bg-[#ffffff99] px-1">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -17,12 +17,12 @@ export default function Menu() {
             index
           </NavLink>
           <NavLink
-            to="/about"
+            to="/info"
             className={({ isActive }) =>
               isActive ? baseStyle + ' line-through' : baseStyle
             }
           >
-            about
+            info
           </NavLink>
         </nav>
       </header>

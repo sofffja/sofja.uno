@@ -1,21 +1,20 @@
 import { motion } from 'framer-motion';
-import { NavLink } from 'react-router-dom';
 
 export default function About() {
-  const baseStyle = 'hover:text-primary transition-colors';
+  const baseStyle = 'hover:underline transition-colors';
 
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="mt-6 md:mt-8 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.5)]"
+      className="mt-16 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.5)]"
     >
-      <div className="flex md:grid grid-cols-3 place-items-center flex-col justify-between">
-        <p>visuals && music && code</p>
-        <div className="flex gap-4">
+      <div className="flex flex-col items-center">
+        <p className="pb-2">3d/music/web/design</p>
+        <div className="flex gap-5">
           <p>contact: </p>
-          <div className="flex flex-col">
+          <div className="flex flex-col items-start">
             <a className={baseStyle} href="mailto:sfffj@proton.me">
               sfffj@proton.me
             </a>
@@ -30,7 +29,7 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="pt-2">
           <a className={baseStyle} href="https://www.aguja.re/">
             +++ aguja.re
           </a>

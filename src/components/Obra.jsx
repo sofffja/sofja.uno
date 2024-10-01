@@ -20,7 +20,7 @@ export default function Obra({ obra }) {
         ref={ref}
         initial={{ opacity: 0 }}
         animate={{ opacity: isInView ? 1 : 0 }}
-        className={`rounded-md shadow-[0_0_18px_0_rgba(0,0,0,0.3)] max-h-[80vh] h-auto max-w-2/3 lg:max-w-2/5 ${
+        className={`rounded-md shadow-[1px_1px_0_0_#00000077,-1px_-1px_0_0_#ffffff77] max-h-[80vh] h-auto max-w-2/3 lg:max-w-2/5 ${
           isLoaded ? 'opacity-100' : 'opacity-0'
         } transition-opacity`}
       />
