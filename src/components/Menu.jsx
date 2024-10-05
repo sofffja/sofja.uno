@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Menu() {
   const baseStyle =
-    'transition-colors hover:invert pt-1 sm:hover:text-[#000] mix-blend-difference';
+    'transition-colors invert pt-1 text-[#000] mix-blend-difference';
 
   return (
     <>
@@ -11,7 +11,9 @@ export default function Menu() {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? baseStyle + ' line-through' : baseStyle
+              isActive
+                ? baseStyle + ' line-through'
+                : baseStyle + ' hover:invert-0 hover:mix-blend-normal'
             }
           >
             index
@@ -19,7 +21,9 @@ export default function Menu() {
           <NavLink
             to="/info"
             className={({ isActive }) =>
-              isActive ? baseStyle + ' line-through' : baseStyle
+              isActive
+                ? baseStyle + ' line-through'
+                : baseStyle + ' hover:invert-0 hover:mix-blend-normal'
             }
           >
             info
