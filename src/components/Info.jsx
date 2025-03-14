@@ -14,7 +14,7 @@ export default function Info() {
       <p>⚘</p>
       <div className="text-center">
         <p>
-          <a className="underline" href="https://github.com/sofja">
+          <a className="underline" href="https://amms-studio.github.io/">
             <GoesOutComesInUnderline
               label="web dev & design"
               direction="left"
